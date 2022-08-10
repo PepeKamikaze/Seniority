@@ -15,6 +15,7 @@ header{
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
+    background-image: linear-gradient(to bottom, rgb(160, 255, 157),rgb(179, 179, 179));
 }
 header h1{
     margin: 0 0 40% 0;
@@ -85,6 +86,15 @@ section{
 }
 .sectDos_img img{
     width: 100%;
+    transform: scale(0.4,0.4);
+    animation-duration: 2s;
+    animation-name: agrandarGato;
+    animation-iteration-count: infinite;
+}
+@keyframes agrandarGato{
+    0%{transform: scale(0.4,0.4);}
+    0.2s{transform: scale(0.5,0.5);}   
+    100%{transform: scale(1,1);}
 }
 .sectDos_parrafo{
     grid-area: parrafoDos;
