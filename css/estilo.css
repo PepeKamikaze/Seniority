@@ -15,7 +15,7 @@ header{
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
-    background-image: linear-gradient(to bottom, rgb(160, 255, 157),rgb(179, 179, 179));
+    /* background-image: linear-gradient(to bottom, rgb(160, 255, 157),rgb(179, 179, 179)); */
 }
 header h1{
     margin: 0 0 40% 0;
@@ -23,6 +23,7 @@ header h1{
 }
 header nav{
     height: 100%;
+    background-image: linear-gradient(to bottom, rgb(160, 255, 157),rgb(179, 179, 179));
 }
 header ul{
     height: 70%;
@@ -112,6 +113,12 @@ section{
         'imgDos'       
     ;
     justify-content: center;
+}
+.flexContainerCourses{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
 }
 /*FIn-MAIN*/
 /*FOOTER*/
