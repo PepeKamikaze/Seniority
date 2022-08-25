@@ -116,7 +116,7 @@ section{
 }
 .flexContainerCourses{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;    
 }
@@ -200,7 +200,6 @@ footer ul{
 /************FIN CONTACTO*******************/
 @media screen and (min-width:600px){
     /*HEADER*/
-    
     header{
         width: 100%;
         height: 10vh;
@@ -228,6 +227,13 @@ footer ul{
     }
     header li{
         font-size: 1rem;
+    }
+    /*MAIN*/
+    .flexContainerCourses{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;         
     }
     /*FOOTER*/
     footer{
@@ -262,7 +268,7 @@ footer ul{
         justify-content: center;
     }
 }
-@media screen and (min-width:1024px){
+@media screen and (min-width:768px){
     /*MAIN*/
     .sectUno{
         margin: 1rem 0 3rem 0;
@@ -290,6 +296,7 @@ footer ul{
         ;
         justify-content: center;
     }
+    
     /*FOOTER*/
     footer{
         width: 100vw;
@@ -321,125 +328,35 @@ footer ul{
         justify-content: center;
     }
 }
-/*
-.nav__responsive-ul{
-    display:none;
-}
-
-.footer__responsive-ul{
-    display: none;
-}
-
-.nav {
-    background-color: #69c;
-}
-
-.nav__ul{
-    margin-top: 0%;
-    margin-left: 0%;
-    padding-top: 0px;
-    padding-left: 0px;
-}
-
-.nav__li{
-    display: inline-block;
-    padding: 12px;
-    color: #fff;
-}
-
-.nav__li:hover > a{
-    color: #bbb;
-}
-
-.nav__li:hover > i{
-    color: #bbb;
-}
-
-.nav__li a {
-    color:#fff;
-    text-decoration: none;
-}
-
-.nav__li i {
-    box-sizing: border-box;
-    text-align: right;
-    margin-right: 5px;
-}
-
-.nav__responsive-button-container{
-    position: absolute;
-    width: 100%;
-    font-size: 25px;
-    background-color: #69c;
-    margin-top: -60px;
-    z-index: 100;
-}
-
-.nav__responsive-button{
-    padding: 6px 20px;
-    text-align: right;
-    width: 100%;
-}
-
-.footer{
-    background-color: #69c;
-}
-
-.footer__ul {
-    list-style-type: none;
-    display: inline-block;
-}
-
-@media only screen and (max-width: 500px) {
-    .nav__ul{
-        display: none;
-    }  
-    .nav{
-        height: 37px;
-        width: 100%;  
-    }  
-    
-    .nav__responsive-ul{
-        display: block;
-        position: absolute;
-        width: 100%;
-        background: #9bf;
-        height: 37px; 
-        margin-top: 37px;
-        padding-top: 27px;
-        list-style-type: none;
+@media screen and (min-width:1200px){    
+    .area_html5{
+        grid-area: area_html5;
     }
-    
-    .nav__li-container{
-        position: relative;   
-        top: calc(100vh - 64px);
-        background: #9bf;
-        transition: all 1s;
-        z-index: 1;
-        width: 75%;
-        padding-top: 27px;
+    .area_css3{
+        grid-area: area_css3; 
+    }
+    .area_javascript{
+        grid-area: area_javascript;
+    }
+    .area_react{
+        grid-area: area_react;
+    }
+    .area_nodejs{
+        grid-area:area_nodejs; 
+    }    
+    .flexContainerCourses{
+        margin: 1rem 0;
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 15rem auto;
+        gap: 2rem;
+        grid-template-areas: 
+            'area_html5' 'area_css3'
+            'area_javascript' 'area_react'
+            'area_nodejs' 'area_nodejs'
+        ;
+        justify-content: left;
     }
 
-    .nav__responsive-li{
-        width: 100%;
-        padding: 9px 20px;        
-    }
-    .nav__responsive-li i{
-        box-sizing: border-box;
-        text-align: center;
-        margin-right: 5px;
-        width: 30px;
-        color: #016;
-    }
-    
-    .nav__responsive-li a{
-        color: #016;
-        text-decoration: none;
-    }
-
-    .nav__responsive-ul:hover > .nav__li-container{
-        top: -27px;
-    }
-    
 }
-*/
