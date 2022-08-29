@@ -1,0 +1,67 @@
+* {
+    font-family: "Sen", sans-serif;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /************INDEX**********************/
+  /*HEADER*/
+  header {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(160, 255, 157);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    background-image: linear-gradient(to bottom, rgb(160, 255, 157),rgb(179, 179, 179));
+    
+
+    h1 {
+      margin: 0 0 40% 0;
+      color: #444;
+    }
+
+    nav {
+      height: 100%;
+    }
+
+    ul {
+      height: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      li {
+        list-style: none;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: "Roboto", sans-serif;
+      }
+    }
+  } 
+    
+  a {
+    text-decoration: none;
+  }
+
+  p{
+    font-size: $size;
+  }
+  
+  /*FIN-HEADER*/
+  /*MAIN*/
+  /*SECTION UNO*/
+  main {
+    width: 100%;
+    height: 100%;
+  }
+  
+  section {
+    width: 100%;
+    height: 100%;
+  }
+  
