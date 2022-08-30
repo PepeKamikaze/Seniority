@@ -1,0 +1,34 @@
+%advertencia{
+    border: 1px;
+    border-color: #f50;
+    background-color: #fdd;
+}
+
+.advertenciaUsuario{
+    @extend .advertenciaUsuario;
+    
+}
+
+@mixin errorWeb($bColor, $bgColor){
+    border: 1px;
+    border-color: $bgColor;
+    background-color: $bgColor;  
+    padding-top: 2rem;
+}
+
+.errorWeb{
+    @include errorWeb(red,pink)
+}
+
+.error{
+    border: 1px;
+    border-color: #f00;
+    background-color: #fdd;  
+    padding-top: 2rem;
+}
+
+.errorFatal{
+    @extend .error;
+    border: 3px;
+}
+
